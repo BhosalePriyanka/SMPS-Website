@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+<link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src= "../AngularJs/route.js"></script>
+<link rel= "stylesheet" href= "../CSS/smps.css" type="text/css"/>
+
+<link rel= "stylesheet" href= "../CSS/service.css" type="text/css"/>
+<title> SMPS Consultancy Ltd </title>
+</head>
+<body ng-app="myApp" ng-controller="firstController">
+<!-- This code for header menu bar -->
+<nav class="menubar">
+<input type="checkbox" id="chkBox">
+<img class="logo" src="../Image/SMPS.png" />
+<label for = "chkBox"><i class="fa fa-bars"></i></label>
+<ul>
+	<li><a href="#!home">Home</a></li>
+	<li><a href="#!about">About</a></li>
+	<li><a href="#!Service">Services</a></li>
+	<li><a href="#!career">Career</a></li>
+	<li><a href="#!contactus">Contact Us</a></li>
+
+</ul>
+</nav>
+
+
+<!-- This code for container-->
+<div class="container">
+<ng-view></ng-view>
+</div>
+<!-- This code for footer bar -->
+
+<footer>
+<nav class="footerNav">
+<ul> 
+<li ng-click="scrollTo('home')"> <a href="#!home"> HOME </a> </li>
+<li ng-click="scrollTo('about')"> <a href="#!about"> ABOUT </a> </li>
+<li ng-click="scrollTo('service')"> <a href="#!services"> SERVICES </a> </li>
+<li ng-click="scrollTo('career')"> <a href="#!careers"> CAREERS </a> </li>
+<li ng-click="scrollTo('contact')" > <a href="#!contactus">CONTACT </a> </li> 
+<!-- <li> <a href="#!blog"> BLOG </a> </li> -->
+</ul>
+</nav>
+
+<div class="con-detail">
+
+<div><i class="fas fa-phone-volume" style="color:white;font-size:20px;"></i>: 0044 141 2372500</div>
+<div><i class="fas fa-envelope" style="color:white;font-size:20px;"></i>: enquiries@smps-consultancy.com </div>
+<div> <i class="fas fa-home" style="color:white;font-size:20px;"></i>:SMPS Consultancy Limited,The Pentagon Centre,Suite 417,36 Washington Street,Glasgow,G3 8AZ</div>
+
+</div>
+
+
+<p class="social">Follow US On-
+	<a href="http://www.msps-consultancy.com/#/" class="fab fa-facebook"></a>
+	<a href="http://www.msps-consultancy.com/#/" class="fab fa-linkedin"></a>
+	<a href="http://www.msps-consultancy.com/#/" class="fab fa-google-plus-g"></a>
+</p>
+
+ 
+</div>
+<div class = "copyright"> &copy; 2017 SMPS Consultancy Ltd. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
